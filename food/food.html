@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUTRITION-GUIDE</title>
+  <link rel="stylesheet" href="food.css">
+  <script src="food.js"></script>
+</head>
+<body>
+    
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2> NUTRISMART</h2>
+      <nav>
+        <ul>
+          <li><button id="home" class="sidebar-btn" type="button" onclick="window.open('../index.html','_self')"><b>Home</b></button></li>
+          <li><button id="nutrition" class="sidebar-btn" type="button" onclick="window.open('../nutrition/nutrition.html','_self')"><b>Search recipes by nutrients</b></button></li>
+          <li><button id="ingredients" class="sidebar-btn" type="button" onclick="window.open('../food/food.html','_self')"><b>Search recipes by ingredients</b></button></li>
+          <li><button id="docs" class="sidebar-btn" type="button" onclick="docs()"><b>Docs</b></button></li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="docs">
+        
+
+    </section>
+    <section class="content">
+      <section id="entryForm">
+        <div id="instructions">
+        <p><b> before using the application pls read the docs carefully for your better experience </b></p>
+      </div>
+      <form>
+        <label for="ingredientInput"><b>Enter Ingredients:</b></label>
+        <input type="text" id="ingredientInput" placeholder="e.g: chicken,+broccoli,+rice" required></br>
+        <label for="numberofrecepies"><b>Enter number of recepies you want:</b></label>
+        <input type="number" id="numberofrecepies"   placeholder="e.g: 3" required></br>
+       
+      </form>
+       <button type="button" id="submit" onclick="submit()">Submit</button>
+    </section>
+    <div id="results">
+        <button id="print" onclick="window.print()">print</button>
+
+    </div>
+
+      </section>
+  </body>
+
+</html>

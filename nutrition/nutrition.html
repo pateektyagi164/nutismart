@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUTRITION-GUIDE</title>
+  <link rel="stylesheet" href="nutrition.css">
+  <script src="nutrition.js"></script>
+</head>
+<body>
+ 
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2> NUTRISMART</h2>
+      <nav>
+        <ul>
+          <li><button id="home" class="sidebar-btn" type="button" onclick="window.open('../index.html','_self')"><b>Home</b></button></li>
+          <li><button id="nutrition" class="sidebar-btn" type="button" onclick="window.open('../nutrition/nutrition.html','_self')"><b>Search recipes by nutrients</b></button></li>
+          <li><button id="ingredients" class="sidebar-btn" type="button" onclick="window.open('../food/food.html','_self')"><b>Search recipes by ingredients</b></button></li>
+          <li><button id="docs" class="sidebar-btn" type="button" onclick="docs()"><b>Docs</b></button></li>
+        </ul>
+      </nav>
+    </aside>
+     <section class="docs">
+
+    </section>
+    <section class="content">
+      <section id="entryForm">
+        <div id="instructions">
+        <p><b> before using the application pls read the docs carefully for your better experience </b></p>
+      </div>
+      
+     <!-- Complete Nutrition Form with all nutrients and vitamins -->
+<form>
+
+  <fieldset>
+    <legend>Carbs</legend>
+    <label for="maxCarbs">Max Carbs</label>
+    <input type="number" id="maxCarbs" class="nutri" placeholder="Enter carbs value">
+    <label for="minCarbs">Min Carbs</label>
+    <input type="number" id="minCarbs" class="nutri" placeholder="Enter carbs value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Protein</legend>
+    <label for="maxProtein">Max Protein</label>
+    <input type="number" id="maxProtein" class="nutri" placeholder="Enter protein value">
+    <label for="minProtein">Min Protein</label>
+    <input type="number" id="minProtein" class="nutri" placeholder="Enter protein value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Calories</legend>
+    <label for="maxCalories">Max Calories</label>
+    <input type="number" id="maxCalories" class="nutri" placeholder="Enter calories value">
+    <label for="minCalories">Min Calories</label>
+    <input type="number" id="minCalories" class="nutri" placeholder="Enter calories value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Fat</legend>
+    <label for="maxFat">Max Fat</label>
+    <input type="number" id="maxFat" class="nutri" placeholder="Enter fat value">
+    <label for="minFat">Min Fat</label>
+    <input type="number" id="minFat" class="nutri" placeholder="Enter fat value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Alcohol</legend>
+    <label for="maxAlcohol">Max Alcohol</label>
+    <input type="number" id="maxAlcohol" class="nutri" placeholder="Enter alcohol value">
+    <label for="minAlcohol">Min Alcohol</label>
+    <input type="number" id="minAlcohol" class="nutri" placeholder="Enter alcohol value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Caffeine</legend>
+    <label for="maxCaffeine">Max Caffeine</label>
+    <input type="number" id="maxCaffeine" class="nutri" placeholder="Enter caffeine value">
+    <label for="minCaffeine">Min Caffeine</label>
+    <input type="number" id="minCaffeine" class="nutri" placeholder="Enter caffeine value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Copper</legend>
+    <label for="maxCopper">Max Copper</label>
+    <input type="number" id="maxCopper" class="nutri" placeholder="Enter copper value">
+    <label for="minCopper">Min Copper</label>
+    <input type="number" id="minCopper" class="nutri" placeholder="Enter copper value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Calcium</legend>
+    <label for="maxCalcium">Max Calcium</label>
+    <input type="number" id="maxCalcium" class="nutri" placeholder="Enter calcium value">
+    <label for="minCalcium">Min Calcium</label>
+    <input type="number" id="minCalcium" class="nutri" placeholder="Enter calcium value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Choline</legend>
+    <label for="maxCholine">Max Choline</label>
+    <input type="number" id="maxCholine" class="nutri" placeholder="Enter choline value">
+    <label for="minCholine">Min Choline</label>
+    <input type="number" id="minCholine" class="nutri" placeholder="Enter choline value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Cholesterol</legend>
+    <label for="maxCholesterol">Max Cholesterol</label>
+    <input type="number" id="maxCholesterol" class="nutri" placeholder="Enter cholesterol value">
+    <label for="minCholesterol">Min Cholesterol</label>
+    <input type="number" id="minCholesterol" class="nutri" placeholder="Enter cholesterol value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Fluoride</legend>
+    <label for="maxFluoride">Max Fluoride</label>
+    <input type="number" id="maxFluoride" class="nutri" placeholder="Enter fluoride value">
+    <label for="minFluoride">Min Fluoride</label>
+    <input type="number" id="minFluoride" class="nutri" placeholder="Enter fluoride value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Saturated Fat</legend>
+    <label for="maxSaturatedFat">Max Saturated Fat</label>
+    <input type="number" id="maxSaturatedFat" class="nutri" placeholder="Enter saturated fat value">
+    <label for="minSaturatedFat">Min Saturated Fat</label>
+    <input type="number" id="minSaturatedFat" class="nutri" placeholder="Enter saturated fat value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Fiber</legend>
+    <label for="maxFiber">Max Fiber</label>
+    <input type="number" id="maxFiber" class="nutri" placeholder="Enter fiber value">
+    <label for="minFiber">Min Fiber</label>
+    <input type="number" id="minFiber" class="nutri" placeholder="Enter fiber value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Folate</legend>
+    <label for="maxFolate">Max Folate</label>
+    <input type="number" id="maxFolate" class="nutri" placeholder="Enter folate value">
+    <label for="minFolate">Min Folate</label>
+    <input type="number" id="minFolate" class="nutri" placeholder="Enter folate value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Iron</legend>
+    <label for="maxIron">Max Iron</label>
+    <input type="number" id="maxIron" class="nutri" placeholder="Enter iron value">
+    <label for="minIron">Min Iron</label>
+    <input type="number" id="minIron" class="nutri" placeholder="Enter iron value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Magnesium</legend>
+    <label for="maxMagnesium">Max Magnesium</label>
+    <input type="number" id="maxMagnesium" class="nutri" placeholder="Enter magnesium value">
+    <label for="minMagnesium">Min Magnesium</label>
+    <input type="number" id="minMagnesium" class="nutri" placeholder="Enter magnesium value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Manganese</legend>
+    <label for="maxManganese">Max Manganese</label>
+    <input type="number" id="maxManganese" class="nutri" placeholder="Enter manganese value">
+    <label for="minManganese">Min Manganese</label>
+    <input type="number" id="minManganese" class="nutri" placeholder="Enter manganese value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Niacin</legend>
+    <label for="maxNiacin">Max Niacin</label>
+    <input type="number" id="maxNiacin" class="nutri" placeholder="Enter niacin value">
+    <label for="minNiacin">Min Niacin</label>
+    <input type="number" id="minNiacin" class="nutri" placeholder="Enter niacin value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Phosphorus</legend>
+    <label for="maxPhosphorus">Max Phosphorus</label>
+    <input type="number" id="maxPhosphorus" class="nutri" placeholder="Enter phosphorus value">
+    <label for="minPhosphorus">Min Phosphorus</label>
+    <input type="number" id="minPhosphorus" class="nutri" placeholder="Enter phosphorus value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Potassium</legend>
+    <label for="maxPotassium">Max Potassium</label>
+    <input type="number" id="maxPotassium" class="nutri" placeholder="Enter potassium value">
+    <label for="minPotassium">Min Potassium</label>
+    <input type="number" id="minPotassium" class="nutri" placeholder="Enter potassium value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Riboflavin</legend>
+    <label for="maxRiboflavin">Max Riboflavin</label>
+    <input type="number" id="maxRiboflavin" class="nutri" placeholder="Enter riboflavin value">
+    <label for="minRiboflavin">Min Riboflavin</label>
+    <input type="number" id="minRiboflavin" class="nutri" placeholder="Enter riboflavin value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Selenium</legend>
+    <label for="maxSelenium">Max Selenium</label>
+    <input type="number" id="maxSelenium" class="nutri" placeholder="Enter selenium value">
+    <label for="minSelenium">Min Selenium</label>
+    <input type="number" id="minSelenium" class="nutri" placeholder="Enter selenium value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Sodium</legend>
+    <label for="maxSodium">Max Sodium</label>
+    <input type="number" id="maxSodium" class="nutri" placeholder="Enter sodium value">
+    <label for="minSodium">Min Sodium</label>
+    <input type="number" id="minSodium" class="nutri" placeholder="Enter sodium value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Sugar</legend>
+    <label for="maxSugar">Max Sugar</label>
+    <input type="number" id="maxSugar" class="nutri" placeholder="Enter sugar value">
+    <label for="minSugar">Min Sugar</label>
+    <input type="number" id="minSugar" class="nutri" placeholder="Enter sugar value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Thiamin</legend>
+    <label for="maxThiamin">Max Thiamin</label>
+    <input type="number" id="maxThiamin" class="nutri" placeholder="Enter thiamin value">
+    <label for="minThiamin">Min Thiamin</label>
+    <input type="number" id="minThiamin" class="nutri" placeholder="Enter thiamin value">
+  </fieldset>
+
+  <!-- Vitamins -->
+  <fieldset>
+    <legend>Vitamin A</legend>
+    <label for="maxVitaminA">Max VitaminA</label>
+    <input type="number" id="maxVitaminA" class="nutri" placeholder="Enter Vitamin A value">
+    <label for="minVitaminA">Min VitaminA</label>
+    <input type="number" id="minVitaminA" class="nutri" placeholder="Enter Vitamin A value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B1 (Thiamin)</legend>
+    <label for="maxVitaminB1">Max VitaminB1</label>
+    <input type="number" id="maxVitaminB1" class="nutri" placeholder="Enter Vitamin B1 value">
+    <label for="minVitaminB1">Min VitaminB1</label>
+    <input type="number" id="minVitaminB1" class="nutri" placeholder="Enter Vitamin B1 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B2 (Riboflavin)</legend>
+    <label for="maxVitaminB2">Max VitaminB2</label>
+    <input type="number" id="maxVitaminB2" class="nutri" placeholder="Enter Vitamin B2 value">
+    <label for="minVitaminB2">Min VitaminB2</label>
+    <input type="number" id="minVitaminB2" class="nutri" placeholder="Enter Vitamin B2 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B3 (Niacin)</legend>
+    <label for="maxVitaminB3">Max VitaminB3</label>
+    <input type="number" id="maxVitaminB3" class="nutri" placeholder="Enter Vitamin B3 value">
+    <label for="minVitaminB3">Min VitaminB3</label>
+    <input type="number" id="minVitaminB3" class="nutri" placeholder="Enter Vitamin B3 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B5 (Pantothenic Acid)</legend>
+    <label for="maxVitaminB5">Max VitaminB5</label>
+    <input type="number" id="maxVitaminB5" class="nutri" placeholder="Enter Vitamin B5 value">
+    <label for="minVitaminB5">Min VitaminB5</label>
+    <input type="number" id="minVitaminB5" class="nutri" placeholder="Enter Vitamin B5 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B6</legend>
+    <label for="maxVitaminB6">Max VitaminB6</label>
+    <input type="number" id="maxVitaminB6" class="nutri" placeholder="Enter Vitamin B6 value">
+    <label for="minVitaminB6">Min VitaminB6</label>
+    <input type="number" id="minVitaminB6" class="nutri" placeholder="Enter Vitamin B6 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B7 (Biotin)</legend>
+    <label for="maxVitaminB7">Max VitaminB7</label>
+    <input type="number" id="maxVitaminB7" class="nutri" placeholder="Enter Vitamin B7 value">
+    <label for="minVitaminB7">Min VitaminB7</label>
+    <input type="number" id="minVitaminB7" class="nutri" placeholder="Enter Vitamin B7 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B9 (Folate)</legend>
+    <label for="maxVitaminB9">Max VitaminB9</label>
+    <input type="number" id="maxVitaminB9" class="nutri" placeholder="Enter Vitamin B9 value">
+    <label for="minVitaminB9">Min VitaminB9</label>
+    <input type="number" id="minVitaminB9" class="nutri" placeholder="Enter Vitamin B9 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin B12</legend>
+    <label for="maxVitaminB12">Max VitaminB12</label>
+    <input type="number" id="maxVitaminB12" class="nutri" placeholder="Enter Vitamin B12 value">
+    <label for="minVitaminB12">Min VitaminB12</label>
+    <input type="number" id="minVitaminB12" class="nutri" placeholder="Enter Vitamin B12 value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin C</legend>
+    <label for="maxVitaminC">Max VitaminC</label>
+    <input type="number" id="maxVitaminC" class="nutri" placeholder="Enter Vitamin C value">
+    <label for="minVitaminC">Min VitaminC</label>
+    <input type="number" id="minVitaminC" class="nutri" placeholder="Enter Vitamin C value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin D</legend>
+    <label for="maxVitaminD">Max VitaminD</label>
+    <input type="number" id="maxVitaminD" class="nutri" placeholder="Enter Vitamin D value">
+    <label for="minVitaminD">Min VitaminD</label>
+    <input type="number" id="minVitaminD" class="nutri" placeholder="Enter Vitamin D value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin E</legend>
+    <label for="maxVitaminE">Max VitaminE</label>
+    <input type="number" id="maxVitaminE" class="nutri" placeholder="Enter Vitamin E value">
+    <label for="minVitaminE">Min VitaminE</label>
+    <input type="number" id="minVitaminE" class="nutri" placeholder="Enter Vitamin E value">
+  </fieldset>
+
+  <fieldset>
+    <legend>Vitamin K</legend>
+    <label for="maxVitaminK">Max VitaminK</label>
+    <input type="number" id="maxVitaminK" class="nutri" placeholder="Enter Vitamin K value">
+    <label for="minVitaminK">Min VitaminK</label>
+    <input type="number" id="minVitaminK" class="nutri" placeholder="Enter Vitamin K value">
+  </fieldset>
+
+</form>
+<pre>   </pre>
+<label for="numberofrecepie">Number of recepies you want :  </label>
+<input type="number" id="number"  placeholder="Enter number of recepies">
+<pre>   </pre>
+<button id="submit" onclick="submit()"><b>submit</b></button>
+
+</section>
+      
+<div id="results">
+  
+</div>
+
+</section>
+ </div>
+    
+</body>
+</html>
