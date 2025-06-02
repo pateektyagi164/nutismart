@@ -1,20 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('.docs').style.display = "none";
-  let arr = [
-    "url('../image/icecream.jpg')",
-    "url('../image/musli.jpg')",
-    "url('../image/istockphoto-1416818056-1024x1024.jpg')",
-    "url('../image/fruits.jpg')"
-  ];
-  let i = 0;
-  setInterval(function () {
-    document.body.style.backgroundImage = arr[i];
-    i++;
-    if (i == arr.length) {
-      i = 0;
-    }
-  }, 2000);
-});
+  
 
   
   const btns = document.querySelectorAll(".sidebar-btn");
